@@ -47,6 +47,9 @@ export function Footer() {
               <FacebookBrandIcon className="h-4 w-4 shrink-0 text-[#1877F2]" aria-hidden />
               Facebook
             </a>
+            <Link className="text-ink-200 hover:text-white" to="/privacy-policy">
+              Privacy policy
+            </Link>
             <Link className="text-ink-200 hover:text-white" to="/#contact">
               Contact
             </Link>
