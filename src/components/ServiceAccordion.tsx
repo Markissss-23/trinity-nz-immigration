@@ -26,7 +26,7 @@ function ItemCard({ item, depth }: { item: ServiceItem; depth: number }) {
   const hasChildren = Boolean(item.children?.length);
   if (!hasBody && !hasChildren) return null;
 
-  const [open, setOpen] = useState(depth === 0);
+  const [open, setOpen] = useState(false);
   const panelId = useId();
   const img = item.image;
   const isTopLevel = depth === 0;

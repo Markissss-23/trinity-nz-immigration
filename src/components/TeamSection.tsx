@@ -63,15 +63,24 @@ export function TeamSection() {
           </li>
         ))}
       </ul>
-      <div className="mt-14 rounded-2xl bg-ink-900 px-6 py-10 text-center sm:px-10">
-        <h3 className="font-display text-2xl font-semibold text-white">Ready to get started?</h3>
-        <p className="mt-2 text-ink-200">Tell us about your goals and we will guide your next steps.</p>
-        <a
-          href="/#contact"
-          className="mt-6 inline-flex rounded-full bg-fern-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-fern-600"
-        >
-          Inquire now
-        </a>
+      <div className="mt-14 relative overflow-hidden rounded-2xl bg-ink-900 text-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('${siteMeta.assets.readyCtaBackground}')`,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="relative px-6 py-10 sm:px-10">
+          <h3 className="font-display text-2xl font-semibold text-white">Ready to get started?</h3>
+          <p className="mt-2 text-ink-200">Tell us about your goals and we will guide your next steps.</p>
+          <a
+            href="/#contact"
+            className="mt-6 inline-flex rounded-full bg-fern-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-fern-600"
+          >
+            Inquire now
+          </a>
+        </div>
       </div>
     </SectionShell>
   );

@@ -22,6 +22,8 @@ export const siteMeta = {
   assets: {
     iaaLogo: "/assets/img/team/iaa.png",
     nzamiLogo: "/assets/img/team/nzami.png",
+    ctaBackground: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=1500&q=80",
+    readyCtaBackground: "https://images.unsplash.com/photo-1695633439545-f61000b336e6?w=1000&auto=format&fit=crop&q=60",
   },
 } as const;
 
