@@ -139,11 +139,17 @@ export type ServiceItem = {
   title: string;
   paragraphs: string[];
   children?: ServiceItem[];
+  /** Optional stock photo (Unsplash) for card layout */
+  image?: { src: string; alt: string };
 };
 
 export const serviceCategories: ServiceItem[] = [
   {
     title: "Visitor travel — NZeTA and visitor visas",
+    image: {
+      src: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=1200&q=80",
+      alt: "Auckland harbour and skyline at dusk — visiting New Zealand",
+    },
     paragraphs: [
       "Travellers from visa-waiver countries and territories usually need an NZeTA (New Zealand Electronic Travel Authority) before boarding; others need an appropriate visitor visa (or another valid visa) for their purpose of travel. Length of stay, conditions, and whether you can study or work depend on the visa or NZeTA you hold.",
       "If you are already in New Zealand and want to stay longer, you may need a further visa — not every visit can be extended. Confirm the current rules on INZ’s visitor and NZeTA pages.",
@@ -152,6 +158,10 @@ export const serviceCategories: ServiceItem[] = [
   },
   {
     title: "Student visa",
+    image: {
+      src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      alt: "Graduates celebrating — full-time study in New Zealand",
+    },
     paragraphs: [
       "A student visa is for people who meet INZ requirements to study full-time with an approved education provider. Course length, fees, insurance, and work rights (if any) are set by INZ and your offer of place.",
       "School-age children of some work visa holders may be eligible for a dependent student visa for primary or secondary school — the principal parent’s visa type matters.",
@@ -160,16 +170,28 @@ export const serviceCategories: ServiceItem[] = [
   },
   {
     title: "Work visas",
+    image: {
+      src: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
+      alt: "Office workspace — working in New Zealand",
+    },
     paragraphs: [],
     children: [
       {
         title: "Partner work visas",
+        image: {
+          src: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=800&q=80",
+          alt: "Waterfront and city view in Wellington, New Zealand",
+        },
         paragraphs: [
           "If you are the partner of a New Zealand citizen or resident, or of someone who holds certain work or student visas, you may be eligible for a partner-linked work visa. Eligibility, work rights, and duration depend on your partner’s visa and on evidence that your relationship is genuine and stable. INZ publishes the current partner instructions online.",
         ],
       },
       {
         title: "Working holiday schemes",
+        image: {
+          src: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
+          alt: "Mountain trail — outdoor travel and working holidays in New Zealand",
+        },
         paragraphs: [
           "New Zealand runs working holiday schemes with specific countries. Typical age bands are 18–30, but some schemes allow applicants up to 35 — caps and rules differ by passport. Check INZ’s scheme list for your country before you plan travel or work.",
           `Official reference: ${immigrationNzLinks.workingHoliday}`,
@@ -177,6 +199,10 @@ export const serviceCategories: ServiceItem[] = [
       },
       {
         title: "Accredited Employer Work Visa (AEWV)",
+        image: {
+          src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+          alt: "Team collaborating — skilled employment with a New Zealand employer",
+        },
         paragraphs: [
           "For many temporary skilled roles, the Accredited Employer Work Visa (AEWV) is the main pathway: you need a job offer from an employer that holds (or is eligible for) accreditation with INZ, and INZ may require a job check to confirm the role is genuine and meets labour-market settings. Skill level, pay, and maximum stay depend on the job and INZ instructions — these settings are updated from time to time.",
           "Older categories such as the Essential Skills Work Visa are largely superseded for new applicants in this space; always use the current AEWV instructions.",
@@ -185,6 +211,10 @@ export const serviceCategories: ServiceItem[] = [
       },
       {
         title: "Other work visas",
+        image: {
+          src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+          alt: "Business meeting — other work visa pathways in New Zealand",
+        },
         paragraphs: [
           "Depending on your situation you might consider post-study work, specific-purpose work, religious worker, seasonal schemes, or other INZ work categories. Each has its own requirements and caps.",
           `Browse all work options from INZ’s visa list: ${immigrationNzLinks.visasHome}`,
@@ -194,10 +224,18 @@ export const serviceCategories: ServiceItem[] = [
   },
   {
     title: "Residence — skilled and family pathways",
+    image: {
+      src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+      alt: "Keys to a home — living in New Zealand as a resident",
+    },
     paragraphs: [],
     children: [
       {
         title: "Skilled Migrant Category (SMC)",
+        image: {
+          src: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80",
+          alt: "Planning and documents — Skilled Migrant Category residence in New Zealand",
+        },
         paragraphs: [
           "The Skilled Migrant Category is INZ’s principal points-based residence pathway for skilled migrants. Points, selection, and acceptable work or qualifications change — INZ publishes upcoming SMC changes on its news centre and operational instructions.",
           "We can help you understand how current settings apply to your profile; final eligibility is determined by INZ against the rules in force when you apply.",
@@ -206,6 +244,10 @@ export const serviceCategories: ServiceItem[] = [
       },
       {
         title: "Green List and related skilled residence",
+        image: {
+          src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+          alt: "Mountain landscape at dawn — skilled residence and Green List pathways in New Zealand",
+        },
         paragraphs: [
           "INZ maintains a Green List of occupations with defined residence pathways. Tier 1 roles may qualify for Straight to Residence; Tier 2 roles may lead to residence after a required period of skilled work in New Zealand. Separate sector pathways (for example care workforce or transport, where available) have their own published requirements.",
           "Lists and eligible occupations change — search the current Green List on INZ before relying on any job title.",
@@ -214,6 +256,10 @@ export const serviceCategories: ServiceItem[] = [
       },
       {
         title: "Partners, dependent children, and other family",
+        image: {
+          src: "https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&w=800&q=80",
+          alt: "Family outdoors — partners, children, and family residence in New Zealand",
+        },
         paragraphs: [
           "Partner-based residence and dependent-child residence each have relationship, age, health, and character requirements that INZ updates. Living together history, dependency, and custody arrangements are assessed against the instructions that apply to your application date.",
           "If you do not yet meet a residence requirement, a temporary visa may still be an option — we can discuss realistic steps.",
@@ -224,6 +270,10 @@ export const serviceCategories: ServiceItem[] = [
   },
   {
     title: "Business and investor visas",
+    image: {
+      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      alt: "Business planning and analytics — investment and business visas for New Zealand",
+    },
     paragraphs: [
       "If you plan to invest in New Zealand or to establish or buy a business, Immigration New Zealand (INZ) sets separate rules for investor residence and for business-related temporary visas. Minimum investment amounts, acceptable investments, business experience, time in New Zealand, and English language (where required) are updated from time to time — always read the current operational instructions before you commit funds or travel.",
       "The Active Investor Plus visa is INZ’s residence pathway for qualifying investors (including Growth and Balanced investment categories with different minimum amounts and terms). If you are developing a business in New Zealand, the Entrepreneur work visa may be relevant while you meet innovation, capital, and business-plan requirements set by INZ.",

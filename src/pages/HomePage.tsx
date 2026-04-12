@@ -115,7 +115,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="mt-12 max-w-4xl">
+          <div className="mt-12 max-w-6xl">
             <ServiceAccordion categories={serviceCategories} />
           </div>
         </SectionShell>
