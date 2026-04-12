@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { siteMeta } from "../content/site";
 
 export function Footer() {
@@ -24,9 +25,9 @@ export function Footer() {
             >
               Facebook
             </a>
-            <a className="text-ink-200 hover:text-white" href="#contact">
+            <Link className="text-ink-200 hover:text-white" to="/#contact">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
         <p className="mt-10 border-t border-ink-800 pt-8 text-xs text-ink-500">© {year} {siteMeta.name}</p>

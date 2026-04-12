@@ -60,7 +60,7 @@ export function TeamSection() {
         <h3 className="font-display text-2xl font-semibold text-white">Ready to get started?</h3>
         <p className="mt-2 text-ink-200">Tell us about your goals and we will guide your next steps.</p>
         <a
-          href="#contact"
+          href="/#contact"
           className="mt-6 inline-flex rounded-full bg-fern-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-fern-600"
         >
           Inquire now

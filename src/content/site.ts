@@ -42,6 +42,7 @@ export const navLinks = [
   { id: "why-nz", label: "Why NZ" },
   { id: "settle", label: "Settle" },
   { id: "services", label: "Services" },
+  { id: "evaluation", label: "Evaluation" },
   { id: "team", label: "Team" },
   { id: "testimonials", label: "Testimonials" },
   { id: "contact", label: "Contact" },
@@ -51,8 +52,8 @@ export const hero = {
   title: "Navigate your New Zealand visa with confidence",
   subtitle:
     "Licensed immigration advisers providing personalised consulting and representation for all visa types — wherever you are in the world.",
-  primaryCta: { label: "Get in touch", href: "#contact" },
-  secondaryCta: { label: "Explore services", href: "#services" },
+  primaryCta: { label: "Get in touch", href: "/#contact" },
+  secondaryCta: { label: "Explore services", href: "/#services" },
   image: {
     src: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=2000&q=80",
     alt: "Auckland city and harbour at dusk, New Zealand",
@@ -112,6 +113,18 @@ export const servicesBlock = {
     label: "Immigration New Zealand — New Zealand visas",
     href: immigrationNzLinks.visasHome,
   },
+};
+
+export const evaluationBlock = {
+  eyebrow: "Eligibility assessment",
+  title: "Immigration evaluation form",
+  intro: [
+    "Please answer the following questions to help us assess your eligibility for a temporary entry or resident visa to New Zealand. Write “Not applicable” or “N/A” for items that do not apply to you.",
+    "The personal information you provide to Trinity NZ Immigration Services Ltd is collected securely and used only to assess your potential for immigration to New Zealand under current selection criteria. We will respond only in relation to your New Zealand immigration evaluation. We operate strictly according to New Zealand privacy law.",
+  ],
+  closingNote:
+    "Thank you for taking the time to answer these questions. It is not necessary to provide documentation at this stage.",
+  ctaLabel: "Open the evaluation form",
 };
 
 export type ServiceItem = {

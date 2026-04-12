@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { navLinks, siteMeta } from "../content/site";
 
 export function Header() {
@@ -28,8 +29,8 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <a
-          href="#top"
+        <Link
+          to="/"
           className="group flex min-w-0 shrink-0 items-center gap-2"
           onClick={() => setOpen(false)}
         >
@@ -41,25 +42,25 @@ export function Header() {
             className="h-9 w-auto max-w-[min(100%,200px)] object-contain object-left sm:h-11 sm:max-w-[240px]"
             decoding="async"
           />
-        </a>
+        </Link>
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.id}
-              href={`#${link.id}`}
+              to={`/#${link.id}`}
               className="rounded-lg px-3 py-2 text-sm font-medium text-ink-700 transition hover:bg-ink-100 hover:text-ink-950"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"
             className="hidden rounded-full bg-fern-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-fern-700 sm:inline-flex"
           >
             Enquire
-          </a>
+          </Link>
           <button
             type="button"
             className="inline-flex rounded-lg p-2 text-ink-800 hover:bg-ink-100 md:hidden"
@@ -87,22 +88,22 @@ export function Header() {
         >
           <nav className="flex flex-col gap-1" aria-label="Mobile primary">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.id}
-                href={`#${link.id}`}
+                to={`/#${link.id}`}
                 className="rounded-lg px-3 py-3 text-base font-medium text-ink-800 hover:bg-ink-100"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               className="mt-2 rounded-full bg-fern-600 px-4 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setOpen(false)}
             >
               Enquire
-            </a>
+            </Link>
           </nav>
         </div>
       ) : null}
