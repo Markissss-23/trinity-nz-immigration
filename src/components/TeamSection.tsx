@@ -22,15 +22,22 @@ export function TeamSection() {
             decoding="async"
           />
         </a>
-        <img
-          src={siteMeta.assets.nzamiLogo}
-          alt="NZAMI"
-          width={200}
-          height={80}
-          className="h-14 w-auto max-w-[200px] object-contain sm:h-16"
-          loading="lazy"
-          decoding="async"
-        />
+        <a
+          href={siteMeta.nzamiUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block shrink-0 transition hover:opacity-90"
+        >
+          <img
+            src={siteMeta.assets.nzamiLogo}
+            alt="New Zealand Association for Migration and Investment (NZAMI)"
+            width={200}
+            height={80}
+            className="h-14 w-auto max-w-[200px] object-contain sm:h-16"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
       </div>
       <ul className="mt-12 grid gap-6 lg:grid-cols-2">
         {team.map((m) => (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { socialReviewHighlights, testimonials, testimonialsBlock } from "../content/site";
 import { SectionShell } from "./SectionShell";
+import { FacebookBrandIcon, GoogleBrandIcon } from "./SocialBrandIcons";
 
 export function TestimonialSlider() {
   const [i, setI] = useState(0);
@@ -77,10 +78,15 @@ export function TestimonialSlider() {
             ) : null}
             <a
               href={block.href}
-              className="mt-6 inline-flex w-fit text-sm font-semibold text-fern-800 underline decoration-fern-600/40 underline-offset-4 hover:decoration-fern-700"
+              className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold text-fern-800 underline decoration-fern-600/40 underline-offset-4 hover:decoration-fern-700"
               target="_blank"
               rel="noopener noreferrer"
             >
+              {block.source === "Google Maps" ? (
+                <GoogleBrandIcon className="h-5 w-5 shrink-0" aria-hidden />
+              ) : (
+                <FacebookBrandIcon className="h-5 w-5 shrink-0 text-[#1877F2]" aria-hidden />
+              )}
               {block.cta}
             </a>
           </div>

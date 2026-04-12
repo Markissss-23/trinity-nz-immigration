@@ -1,5 +1,6 @@
 import { useId, useState } from "react";
 import type { ServiceItem } from "../content/site";
+import { InzLinkifiedText } from "./InzLinkifiedText";
 
 function ItemCard({ item, depth }: { item: ServiceItem; depth: number }) {
   const hasBody = item.paragraphs.length > 0;
@@ -44,7 +45,7 @@ function ItemCard({ item, depth }: { item: ServiceItem; depth: number }) {
             <div className="space-y-3 pt-4 text-ink-700">
               {item.paragraphs.map((p, idx) => (
                 <p key={idx} className="text-[15px] leading-relaxed">
-                  {p}
+                  <InzLinkifiedText text={p} />
                 </p>
               ))}
             </div>

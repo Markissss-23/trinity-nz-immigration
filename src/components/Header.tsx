@@ -31,7 +31,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           to="/"
-          className="group flex min-w-0 shrink-0 items-center gap-2"
+          className="group flex h-[72px] w-[min(100%,280px)] max-w-[280px] shrink-0 items-center"
           onClick={() => setOpen(false)}
         >
           <img
@@ -39,7 +39,7 @@ export function Header() {
             alt={siteMeta.name}
             width={280}
             height={72}
-            className="h-9 w-auto max-w-[min(100%,200px)] object-contain object-left sm:h-11 sm:max-w-[240px]"
+            className="h-full w-full max-h-[72px] object-contain object-left"
             decoding="async"
           />
         </Link>

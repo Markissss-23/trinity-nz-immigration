@@ -1,8 +1,8 @@
 export const siteMeta = {
   /** Official site name */
-  name: "Trinity New Zealand Immigration",
-  shortName: "Trinity New Zealand Immigration",
-  logoUrl: "/assets/img/logo.png",
+  name: "Trinity New Zealand Immigration Services",
+  shortName: "Trinity New Zealand Immigration Services",
+  logoUrl: "/assets/img/logo-2026.png",
   tagline: "Immigration consultation and advice for New Zealand",
   email: "info@trinitynzimmigration.co.nz",
   phones: [
@@ -18,6 +18,7 @@ export const siteMeta = {
   facebookUrl: "https://www.facebook.com/trinityNZimmigration/",
   facebookReviewsUrl: "https://www.facebook.com/trinityNZimmigration/reviews",
   iaaUrl: "https://www.iaa.govt.nz/",
+  nzamiUrl: "https://nzami.co.nz/",
   assets: {
     iaaLogo: "/assets/img/team/iaa.png",
     nzamiLogo: "/assets/img/team/nzami.png",
@@ -35,6 +36,10 @@ export const immigrationNzLinks = {
   skilledResidence: "https://www.immigration.govt.nz/new-zealand-visas/preparing-a-visa-application/living-in-new-zealand-permanently/new-zealand-skilled-residence-pathways",
   greenList: "https://www.immigration.govt.nz/green-list",
   smc: "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+  /** Business / investment pathways (confirm current pages on INZ before applying). */
+  activeInvestorPlus: "https://www.immigration.govt.nz/visas/active-investor-plus-visa/",
+  entrepreneurWork: "https://www.immigration.govt.nz/visas/entrepreneur-work-visa/",
+  investorCategoryNews: "https://www.immigration.govt.nz/about-us/news-centre/investor-category",
 } as const;
 
 export const navLinks = [
@@ -56,7 +61,6 @@ export const hero = {
   secondaryCta: { label: "Explore services", href: "/#services" },
   image: {
     src: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=2000&q=80",
-    alt: "Auckland city and harbour at dusk, New Zealand",
   },
 };
 
@@ -64,7 +68,7 @@ export const about = {
   eyebrow: "About us",
   title: "Immigration support tailored to you",
   body: [
-    "Trinity New Zealand Immigration is the official website of our practice, offering immigration consultation and advice. We provide a wide range of personalised immigration consulting and representation services for all visa types and immigration categories. Our unique ability to provide our services internationally allows us to assist foreign nationals from any country in the world.",
+    "Trinity NZ Immigration has been operating since 2016. Trinity New Zealand Immigration is the official website of our practice, offering immigration consultation and advice. We provide a wide range of personalised immigration consulting and representation services for all visa types and immigration categories. Our unique ability to provide our services internationally allows us to assist foreign nationals from any country in the world.",
   ],
 };
 
@@ -117,10 +121,13 @@ export const servicesBlock = {
 
 export const evaluationBlock = {
   eyebrow: "Eligibility assessment",
-  title: "Immigration evaluation form",
+  title: "Online evaluation form",
+  /** Shown on the home section and on `/evaluation` (same wording in both places). */
   intro: [
+    "Licensed immigration advisers form an integral part of your plans to travel to New Zealand. Whether your plan is to visit, study, work, or permanently live in New Zealand, immigration advisers can represent and assist you in making your dream a reality. They are equipped with knowledge, experience, and technical know-how to make the process convenient and rewarding for you.",
+    "Please fill out our evaluation form — we will reach out as soon as we can.",
     "Please answer the following questions to help us assess your eligibility for a temporary entry or resident visa to New Zealand. Write “Not applicable” or “N/A” for items that do not apply to you.",
-    "The personal information you provide to Trinity NZ Immigration Services Ltd is collected securely and used only to assess your potential for immigration to New Zealand under current selection criteria. We will respond only in relation to your New Zealand immigration evaluation. We operate strictly according to New Zealand privacy law.",
+    "The personal information you provide to Trinity New Zealand Immigration is collected securely and used only to assess your potential for immigration to New Zealand under current selection criteria. We will respond only in relation to your New Zealand immigration evaluation. We operate strictly according to New Zealand privacy law.",
   ],
   closingNote:
     "Thank you for taking the time to answer these questions. It is not necessary to provide documentation at this stage.",
@@ -212,6 +219,17 @@ export const serviceCategories: ServiceItem[] = [
           `Start from INZ’s visa finder and family categories: ${immigrationNzLinks.visasHome}`,
         ],
       },
+    ],
+  },
+  {
+    title: "Business and investor visas",
+    paragraphs: [
+      "If you plan to invest in New Zealand or to establish or buy a business, Immigration New Zealand (INZ) sets separate rules for investor residence and for business-related temporary visas. Minimum investment amounts, acceptable investments, business experience, time in New Zealand, and English language (where required) are updated from time to time — always read the current operational instructions before you commit funds or travel.",
+      "The Active Investor Plus visa is INZ’s residence pathway for qualifying investors (including Growth and Balanced investment categories with different minimum amounts and terms). If you are developing a business in New Zealand, the Entrepreneur work visa may be relevant while you meet innovation, capital, and business-plan requirements set by INZ.",
+      `Active Investor Plus visa (current visa page): ${immigrationNzLinks.activeInvestorPlus}`,
+      `Entrepreneur work visa: ${immigrationNzLinks.entrepreneurWork}`,
+      `Investor category overview and policy updates on INZ: ${immigrationNzLinks.investorCategoryNews}`,
+      `Browse all visa options, including other business or investment categories: ${immigrationNzLinks.visasHome}`,
     ],
   },
 ];
