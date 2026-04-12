@@ -20,8 +20,11 @@ export function TestimonialSlider() {
       <div className="relative rounded-2xl border border-ink-200 bg-ink-50/50 p-6 shadow-card sm:p-10 lg:p-12">
         <figure>
           <blockquote className="border-l-4 border-fern-600 pl-6 text-lg leading-relaxed text-ink-800 sm:text-xl">
-            {testimonials[i]}
+            {testimonials[i].text}
           </blockquote>
+          <figcaption className="mt-6 text-sm font-semibold text-ink-900">
+            — {testimonials[i].author}
+          </figcaption>
         </figure>
         <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
           <div className="flex gap-2" role="tablist" aria-label="Testimonial pages">
