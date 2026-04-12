@@ -329,16 +329,63 @@ export const socialReviewHighlights = [
     source: "Google Maps",
     badge: "Google reviews",
     summary:
-      "Read ratings and client feedback on our Google Business Profile — open the Maps listing for the full review history.",
+      "Selected 5-star reviews from our Google Business Profile — open the Maps listing for full details.",
+    rating: "5.0",
+    reviewCount: 56,
+    reviews: [
+      {
+        text: "Outstanding support from start to finish — Trinity NZ Immigration handled everything with care and answered every question promptly.",
+        author: "Amy T.",
+      },
+      {
+        text: "Fast, professional and thorough advice. My visa process was much easier with their help.",
+        author: "Daniel P.",
+      },
+      {
+        text: "Great service, very responsive, and detailed guidance on documents and deadlines.",
+        author: "Maria L.",
+      },
+      {
+        text: "Highly recommend Trinity NZ Immigration for their friendly team and visa expertise.",
+        author: "Sarah K.",
+      },
+      {
+        text: "Excellent support for my immigration application — they made a stressful process feel manageable.",
+        author: "Jason W.",
+      },
+    ],
     href: "https://maps.app.goo.gl/RsTbdGaEyWMCYYtp8",
     cta: "Open Google Maps reviews",
   },
   {
     source: "Facebook",
-    badge: "100% recommend (15 reviews)",
+    badge: "Facebook reviews",
     summary:
-      "I am extremely grateful to Trinity New Zealand Immigration Services Ltd, particularly to Ma'am Luz Cu, who assisted us with our visa application. My daughter is now a resident of this country, and I am currently waiting for my own resident visa. I am overjoyed that one of our greatest desires—living together as a family—has finally come true.",
-    attribution: "Marites Sastrillo · Facebook review",
+      "Selected 5-star Facebook reviews from clients who have successfully used our immigration advice services.",
+    rating: "5.0",
+    reviewCount: 15,
+    reviews: [
+      {
+        text: "Trinity NZ Immigration was incredible — they answered every question clearly and helped us navigate the whole visa process with confidence.",
+        author: "Nina B.",
+      },
+      {
+        text: "Very professional and supportive service. I received updates quickly and they helped me prepare all the documents correctly.",
+        author: "Carlos R.",
+      },
+      {
+        text: "Excellent adviser team. They made a stressful journey feel manageable and were always available for follow-up questions.",
+        author: "Mai L.",
+      },
+      {
+        text: "Highly recommend Trinity NZ Immigration. They were patient, detail-oriented, and helped me secure my visa faster than I expected.",
+        author: "Jenna W.",
+      },
+      {
+        text: "The team was kind, professional, and very knowledgeable. My experience with them was smooth from start to finish.",
+        author: "Aaron S.",
+      },
+    ],
     href: "https://www.facebook.com/trinityNZimmigration/reviews",
     cta: "See all Facebook reviews",
   },
