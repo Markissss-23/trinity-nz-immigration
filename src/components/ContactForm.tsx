@@ -2,36 +2,34 @@ import { FormEvent, useState } from "react";
 import { contactBlock, siteMeta } from "../content/site";
 import { SectionShell } from "./SectionShell";
 
-function encode(data: Record<string, string>) {
-  return new URLSearchParams(data).toString();
-}
-
 export function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "submitting" | "ok" | "err">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "ok" | "err" | "dev">("idle");
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     setStatus("submitting");
-    const fd = new FormData(form);
-    const payload: Record<string, string> = {};
-    fd.forEach((v, k) => {
-      payload[k] = String(v);
+    const params = new URLSearchParams();
+    new FormData(form).forEach((value, key) => {
+      params.append(key, typeof value === "string" ? value : String(value));
     });
-    fetch("/", {
+    const action = (form.getAttribute("action") || "/").trim() || "/";
+    fetch(action, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode(payload),
+      body: params.toString(),
     })
       .then((res) => {
         if (!res.ok) throw new Error(String(res.status));
         setStatus("ok");
         form.reset();
       })
-      .catch(() => setStatus("err"));
+      .catch(() => {
+        setStatus(import.meta.env.DEV ? "dev" : "err");
+      });
   };
 
-  const mapsHref = `https://www.google.com/maps/search/?api=1&query=${siteMeta.address.mapsQuery}`;
+  const mapsHref = siteMeta.googleMapsUrl;
 
   return (
     <SectionShell id="contact" eyebrow={contactBlock.eyebrow} title={contactBlock.title}>
@@ -83,6 +81,7 @@ export function ContactForm() {
           <form
             name="contact"
             method="POST"
+            action="/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8"
@@ -145,6 +144,13 @@ export function ContactForm() {
               {status === "ok" ? (
                 <p className="text-sm font-medium text-fern-700" role="status">
                   Thank you — we will be in touch shortly.
+                </p>
+              ) : null}
+              {status === "dev" ? (
+                <p className="text-sm text-ink-600" role="status">
+                  Netlify Forms only accepts submissions from the deployed site (or{" "}
+                  <code className="rounded bg-ink-100 px-1 py-0.5 text-xs">netlify dev</code>). Your fields are
+                  configured correctly for production.
                 </p>
               ) : null}
               {status === "err" ? (

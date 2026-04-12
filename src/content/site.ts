@@ -1,9 +1,9 @@
 export const siteMeta = {
-  name: "Trinity New Zealand Immigration Services Ltd.",
-  shortName: "Trinity NZ Immigration",
-  /** Official marketing asset from trinitynzimmigration.co.nz */
-  logoUrl: "https://trinitynzimmigration.co.nz/assets/img/logo.png",
-  tagline: "Personalised immigration advice for New Zealand",
+  /** Official site name */
+  name: "Trinity New Zealand Immigration",
+  shortName: "Trinity New Zealand Immigration",
+  logoUrl: "/assets/img/logo.png",
+  tagline: "Immigration consultation and advice for New Zealand",
   email: "info@trinitynzimmigration.co.nz",
   phones: [
     { label: "Luz Cu", href: "tel:+64224071965", display: "+64 22 407 1965" },
@@ -13,7 +13,15 @@ export const siteMeta = {
     lines: ["395 Lake Road", "Takapuna", "Auckland 0622", "New Zealand"],
     mapsQuery: "395+Lake+Road+Takapuna+Auckland",
   },
+  /** Google Maps listing (location & reviews) */
+  googleMapsUrl: "https://maps.app.goo.gl/RsTbdGaEyWMCYYtp8",
+  facebookUrl: "https://www.facebook.com/trinityNZimmigration/",
+  facebookReviewsUrl: "https://www.facebook.com/trinityNZimmigration/reviews",
   iaaUrl: "https://www.iaa.govt.nz/",
+  assets: {
+    iaaLogo: "/assets/img/team/iaa.png",
+    nzamiLogo: "/assets/img/team/nzami.png",
+  },
 } as const;
 
 /** Authoritative visa criteria — use alongside licensed advice (requirements change). */
@@ -48,7 +56,6 @@ export const hero = {
   image: {
     src: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=2000&q=80",
     alt: "Auckland city and harbour at dusk, New Zealand",
-    credit: "Photo: Unsplash",
   },
 };
 
@@ -56,7 +63,7 @@ export const about = {
   eyebrow: "About us",
   title: "Immigration support tailored to you",
   body: [
-    "Trinity New Zealand Immigration Services Ltd. provides a wide range of personalised immigration consulting and representation services for all visa types and immigration categories. Our unique ability to provide our services internationally allows us to assist foreign nationals from any country in the world.",
+    "Trinity New Zealand Immigration is the official website of our practice, offering immigration consultation and advice. We provide a wide range of personalised immigration consulting and representation services for all visa types and immigration categories. Our unique ability to provide our services internationally allows us to assist foreign nationals from any country in the world.",
   ],
 };
 
@@ -215,12 +222,14 @@ export const team = [
     name: "Luz Bayog Cu",
     license: "License No. 201601321",
     credentials: "BS Zoo, MPA, MS Bio, GCNZIA",
+    photo: "/assets/img/team/team-cu.jpg",
     bio: "Luz has a long background and expansive experiences as a university lecturer as well as a scientific and social researcher. Luz is a competent administrator and finance officer of a privately–owned corporation. Luz is well qualified and holds Master degrees both in Biology and Public Administration. These multidisciplinary backgrounds equip her to successfully handle visa applications. Luz speaks fluent English, Tagalog, Cebuano and understands Spanish and Latin.",
   },
   {
     name: "Tonet Cruz Jang",
     license: "License No. 201601367",
     credentials: "BS Bus Admin, GCNZIA",
+    photo: "/assets/img/team/team-jang.jpg",
     bio: "Tonet holds a Bachelor’s degree in Science with a major in Business Administration. Tonet has extensive experience in sales and customer service from diverse industries. This has strongly developed her communication skills and high attention to detail. Providing personalized service and giving absolute focus to each individual case is one of her strengths. Tonet speaks fluent English, Cebuano and Tagalog.",
   },
 ];
@@ -228,8 +237,30 @@ export const team = [
 export const testimonialsBlock = {
   eyebrow: "Testimonials",
   title: "What our clients say",
-  subtitle: "Feedback from people we have supported through their visa journeys.",
+  subtitle:
+    "Feedback from people we have supported through their visa journeys — and live reviews on Google Maps and Facebook.",
 };
+
+/** Highlights from public review pages (see links for full threads). */
+export const socialReviewHighlights = [
+  {
+    source: "Google Maps",
+    badge: "Google reviews",
+    summary:
+      "Read ratings and client feedback on our Google Business Profile — open the Maps listing for the full review history.",
+    href: "https://maps.app.goo.gl/RsTbdGaEyWMCYYtp8",
+    cta: "Open Google Maps reviews",
+  },
+  {
+    source: "Facebook",
+    badge: "100% recommend (15 reviews)",
+    summary:
+      "I am extremely grateful to Trinity New Zealand Immigration Services Ltd, particularly to Ma'am Luz Cu, who assisted us with our visa application. My daughter is now a resident of this country, and I am currently waiting for my own resident visa. I am overjoyed that one of our greatest desires—living together as a family—has finally come true.",
+    attribution: "Marites Sastrillo · Facebook review",
+    href: "https://www.facebook.com/trinityNZimmigration/reviews",
+    cta: "See all Facebook reviews",
+  },
+] as const;
 
 export const testimonials = [
   "First of all, this service is well managed. They have provided good services. They helped me put together the right documents that I needed. Since the beginning until my visa was approved, they never left me alone. I really thank the services, especially to Luz Bayog Cu who truly helped me get my visa approved. After so many years of waiting, I have finally come to New Zealand and see my family. That's why I am so thankful for Trinity New Zealand Immigration Services, they were the ones who guided and helped get my visa approved. I am so happy for your help, thank you very much. It is my hope that you will be able to help others more, especially those similar to my situation. God bless!",

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { testimonials, testimonialsBlock } from "../content/site";
+import { socialReviewHighlights, testimonials, testimonialsBlock } from "../content/site";
 import { SectionShell } from "./SectionShell";
 
 export function TestimonialSlider() {
@@ -61,6 +61,30 @@ export function TestimonialSlider() {
             </button>
           </div>
         </div>
+      </div>
+
+      <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        {socialReviewHighlights.map((block) => (
+          <div
+            key={block.source}
+            className="flex h-full flex-col rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8"
+          >
+            <p className="text-xs font-semibold uppercase tracking-wide text-fern-700">{block.source}</p>
+            <p className="mt-2 font-display text-lg font-semibold text-ink-950">{block.badge}</p>
+            <p className="mt-4 flex-1 text-[15px] leading-relaxed text-ink-700">{block.summary}</p>
+            {"attribution" in block && block.attribution ? (
+              <p className="mt-4 text-sm font-medium text-ink-500">{block.attribution}</p>
+            ) : null}
+            <a
+              href={block.href}
+              className="mt-6 inline-flex w-fit text-sm font-semibold text-fern-800 underline decoration-fern-600/40 underline-offset-4 hover:decoration-fern-700"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {block.cta}
+            </a>
+          </div>
+        ))}
       </div>
     </SectionShell>
   );

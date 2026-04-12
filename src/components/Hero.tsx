@@ -45,7 +45,6 @@ export function Hero() {
             {hero.secondaryCta.label}
           </a>
         </div>
-        <p className="mt-8 text-xs text-ink-300">{hero.image.credit}</p>
       </div>
     </section>
   );
