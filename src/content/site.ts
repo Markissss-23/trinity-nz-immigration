@@ -62,6 +62,7 @@ export const hero = {
   image: {
     src: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=2000&q=80",
   },
+  alt: "",
 };
 
 export const about = {
