@@ -4,19 +4,19 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-violet-200/80 bg-violet-900"
+      className="relative overflow-hidden border-b border-violet-50/80 bg-transparent"
       aria-labelledby="hero-heading"
     >
       <div className="absolute inset-0">
         <img
           src={hero.image.src}
           alt={hero.image.alt}
-          className="h-full w-full object-cover opacity-40"
+          className="h-full w-full object-cover opacity-90"
           loading="eager"
           decoding="async"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-r from-violet-950 via-violet-500/85 to-violet-50/40"
+          className="absolute inset-0 bg-gradient-to-r from-violet-900 to-transparent"
           aria-hidden
         />
       </div>

@@ -13,6 +13,7 @@ import { SectionShell } from "../components/SectionShell";
 import { ServiceAccordion } from "../components/ServiceAccordion";
 import { TrustStats } from "../components/TrustStats";
 import { TeamSection } from "../components/TeamSection";
+import { SocialMarquee } from "../components/SocialMarquee";
 import { TestimonialSlider } from "../components/TestimonialSlider";
 import { ContactForm } from "../components/ContactForm";
 import { EvaluationSection } from "../components/EvaluationSection";
@@ -124,6 +125,7 @@ export default function HomePage() {
 
         <TrustStats />
         <TeamSection />
+        <SocialMarquee />
         <TestimonialSlider />
         <ContactForm />
       </main>
