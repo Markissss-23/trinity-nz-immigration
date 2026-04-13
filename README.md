@@ -1,4 +1,4 @@
-# Trinity New Zealand Immigration — marketing site
+# Trinity New Zealand Immigration Services
 
 **Repository:** [github.com/Markissss-23/trinity-nz-immigration](https://github.com/Markissss-23/trinity-nz-immigration)
 
