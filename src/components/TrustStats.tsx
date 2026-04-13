@@ -3,7 +3,7 @@ import { trustStats } from "../content/site";
 export function TrustStats() {
   return (
     <div className="border-y border-ink-200 bg-white">
-      <div className="mx-auto grid max-w-6xl gap-px bg-ink-200 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-6xl gap-px bg-ink-200 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-5 lg:px-8">
         {trustStats.map((s) => (
           <div
             key={s.label}

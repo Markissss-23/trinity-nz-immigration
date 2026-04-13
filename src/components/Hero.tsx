@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-ink-200/80 bg-ink-900"
+      className="relative overflow-hidden border-b border-violet-200/80 bg-violet-900"
       aria-labelledby="hero-heading"
     >
       <div className="absolute inset-0">
@@ -16,12 +16,12 @@ export function Hero() {
           decoding="async"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-r from-ink-950 via-ink-950/85 to-ink-950/40"
+          className="absolute inset-0 bg-gradient-to-r from-violet-950 via-violet-500/85 to-violet-50/40"
           aria-hidden
         />
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
-        <p className="text-sm font-medium uppercase tracking-wider text-fern-400">
+        <p className="text-sm font-medium uppercase tracking-wider text-neutral-50">
           {siteMeta.shortName}
         </p>
         <h1

@@ -71,7 +71,7 @@ export const about = {
   eyebrow: "About us",
   title: "Immigration support tailored to you",
   body: [
-    "Trinity NZ Immigration has been operating since 2016. Trinity New Zealand Immigration is the official website of our practice, offering immigration consultation and advice. We provide a wide range of personalised immigration consulting and representation services for all visa types and immigration categories. Our unique ability to provide our services internationally allows us to assist foreign nationals from any country in the world.",
+    "Trinity New Zealand Immigration Services has been operating since 2016. We provide a wide range of personalised immigration consulting and representation services for all visa types and immigration categories. Our unique ability to provide our services internationally allows us to assist foreign nationals from any country in the world.",
   ],
 };
 
@@ -288,6 +288,7 @@ export const serviceCategories: ServiceItem[] = [
 ];
 
 export const trustStats = [
+  { value: "10", label: "Years of experience" },
   { value: "2", label: "Licensed Immigration Advisers (IAA)" },
   { value: "6+", label: "Languages & dialects supported" },
   { value: "All", label: "Major visa pathways covered" },
