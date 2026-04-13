@@ -160,6 +160,7 @@ export function EvaluationForm() {
       action="/"
       data-netlify="true"
       data-netlify-honeypot="bot-field-eval"
+      data-netlify-recaptcha="true"
       className="max-w-4xl space-y-8"
       onSubmit={onSubmit}
     >
@@ -991,6 +992,10 @@ export function EvaluationForm() {
       </FormSection>
 
       <p className="text-[15px] text-ink-700">{evaluationBlock.closingNote}</p>
+
+      <div className="mt-6">
+        <div data-netlify-recaptcha="true" />
+      </div>
 
       <div className="flex flex-wrap items-center gap-4 pt-2">
         <button

@@ -84,6 +84,7 @@ export function ContactForm() {
             action="/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8"
             onSubmit={onSubmit}
           >
@@ -132,6 +133,9 @@ export function ContactForm() {
                   className="mt-1.5 w-full resize-y rounded-xl border border-ink-200 bg-ink-50/50 px-4 py-3 text-ink-900 outline-none ring-fern-600/30 transition focus:border-fern-600 focus:ring-2"
                 />
               </div>
+            </div>
+            <div className="mt-6">
+              <div data-netlify-recaptcha="true" />
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <button
