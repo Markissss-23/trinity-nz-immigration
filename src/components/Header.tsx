@@ -30,9 +30,11 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
-          to="/"
+          to="/#top"
           className="group flex h-[72px] w-[min(100%,280px)] max-w-[280px] shrink-0 items-center"
-          onClick={() => setOpen(false)}
+          onClick={() => {
+            setOpen(false);
+          }}
         >
           <img
             src={siteMeta.logoUrl}
