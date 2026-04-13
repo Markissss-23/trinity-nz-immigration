@@ -50,6 +50,9 @@ export function Footer() {
             <Link className="text-ink-200 hover:text-white" to="/privacy-policy">
               Privacy policy
             </Link>
+            <Link className="text-ink-200 hover:text-white" to="/terms-and-conditions">
+              Terms & conditions
+            </Link>
             <Link className="text-ink-200 hover:text-white" to="/#contact">
               Contact
             </Link>
