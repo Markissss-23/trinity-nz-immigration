@@ -1,0 +1,47 @@
+# Project: Trinity New Zealand Immigration Services — Marketing Website
+
+## Overview
+Single-page marketing website for Trinity New Zealand Immigration Services Ltd.
+Built with React + TypeScript + Vite + Tailwind CSS. Deployed on Netlify.
+
+## Tech Stack
+- React 18 with TypeScript (strict mode)
+- Vite 8 as build tool (build command: `npm run build`, output: `dist/`)
+- Tailwind CSS v3 for all styling — do NOT write custom CSS unless absolutely necessary
+- React Router DOM v7 for routing
+- Netlify for hosting, forms, and deployment
+- Node.js >= 20.19.0
+
+## Project Structure
+- `src/content/site.ts` — ALL editable copy, links, and site metadata lives here. Always update content here, not inline in components.
+- `src/` — React components and pages
+- `public/` — static assets
+- `index.html` — contains hidden Netlify form for static form detection at deploy time
+
+## Code Style Rules
+- Always use TypeScript. No plain `.js` files in `src/`.
+- Use functional components with hooks only. No class components.
+- Use Tailwind utility classes for all styling. No inline styles, no separate CSS files.
+- Keep components small and focused. Split into smaller components if a file exceeds ~100 lines.
+- Use descriptive, readable variable and function names.
+- Add brief comments for any logic that isn't immediately obvious.
+
+## Netlify-Specific Rules
+- The contact form uses Netlify Forms. Always keep the hidden static form in `index.html` in sync with the visible React form fields.
+- Form submissions POST to `/` with `application/x-www-form-urlencoded`. Do not change this.
+- Do not add a backend or serverless functions unless explicitly asked.
+- HTTPS and SSL are handled automatically by Netlify — do not add any certificate logic.
+
+## Content Rules
+- All visa and immigration information must reference official Immigration New Zealand (INZ) pathways (e.g. AEWV, NZeTA, Green List, SMC).
+- Always include a disclaimer pointing users to INZ for authoritative and up-to-date requirements.
+- Do not invent or assume visa criteria — flag any uncertain content for human review.
+- Tone should be professional, clear, and trustworthy — this is a licensed immigration services business.
+
+## Do NOT Do These
+- Do not install new npm packages without being asked.
+- Do not switch from Tailwind to any other CSS framework.
+- Do not add analytics scripts (e.g. Google Analytics) unless explicitly asked.
+- Do not modify `netlify.toml` unless asked.
+- Do not add `console.log` statements to production code.
+- Do not use `any` type in TypeScript — always type properly.
