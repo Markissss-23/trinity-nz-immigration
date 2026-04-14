@@ -47,7 +47,7 @@ export function Header() {
         </Link>
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
           {navLinks.map((link) => {
-            const target = link.href ?? `/#${link.id}`;
+            const target = ("href" in link ? link.href : undefined) ?? `/#${link.id}`;
             return (
               <Link
                 key={link.id}
@@ -93,7 +93,7 @@ export function Header() {
         >
           <nav className="flex flex-col gap-1" aria-label="Mobile primary">
             {navLinks.map((link) => {
-              const target = link.href ?? `/#${link.id}`;
+              const target = ("href" in link ? link.href : undefined) ?? `/#${link.id}`;
               return (
                 <Link
                   key={link.id}
