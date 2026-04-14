@@ -305,7 +305,7 @@ export const teamBlock = {
     "Our immigration advisers have experience working with immigrants from many backgrounds and countries. We can provide the information you need to immigrate to New Zealand and help ensure the process is as smooth as possible.",
   affiliationTitle: "Professional associations",
   affiliationSubtitle:
-    "We are connected to the leading immigration adviser organizations in New Zealand, including IAA, NZAMI, and LIAA.",
+    "We are connected to the leading immigration adviser organisations in New Zealand, including IAA, NZAMI, and LIAA.",
 };
 
 export const team = [
