@@ -9,15 +9,17 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex max-w-lg gap-4">
-            <img
-              src={siteMeta.logoUrl}
-              alt={siteMeta.name}
-              width={224}
-              height={58}
-              className="h-[57.6px] w-[min(100%,224px)] max-w-[224px] shrink-0 object-contain object-left"
-              loading="lazy"
-              decoding="async"
-            />
+            <div className="shrink-0 rounded-xl bg-white/80 px-3 py-2 ring-1 ring-white/80 backdrop-blur-sm">
+              <img
+                src={siteMeta.logoUrl}
+                alt={siteMeta.name}
+                width={224}
+                height={58}
+                className="h-[57.6px] w-[min(100%,224px)] max-w-[224px] object-contain object-left drop-shadow-[0_0_8px_rgba(255,255,255,0.25)]"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <div className="min-w-0">
               <p className="font-display text-lg font-semibold text-white">{siteMeta.shortName}</p>
               <p className="mt-2 text-sm leading-relaxed text-ink-300">
