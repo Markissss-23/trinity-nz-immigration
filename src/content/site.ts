@@ -1,3 +1,5 @@
+import { href } from "react-router-dom";
+
 export const siteMeta = {
   /** Official site name */
   name: "Trinity New Zealand Immigration Services",
@@ -54,6 +56,7 @@ export const navLinks = [
   { id: "evaluation", label: "Evaluation" },
   { id: "team", label: "Team" },
   { id: "testimonials", label: "Testimonials" },
+  { id: "news", label: "News", href: "/news" },
   { id: "faq", label: "FAQ", href: "/faq" },
   { id: "contact", label: "Contact" },
 ] as const;
@@ -469,3 +472,120 @@ export const contactBlock = {
   intro:
     "Our licensed immigration advisers can assist you with all of your immigration needs. Contact us today for answers to any of your immigration questions.",
 };
+
+export interface NewsArticle {
+  title: string;
+  date: string;
+  category: "Work Visas" | "Residence" | "Visitor & Holiday" | "Policy Changes";
+  summary: string;
+  keyPoints?: string[];
+  sourceUrl: string;
+}
+ 
+export const newsData: NewsArticle[] = [
+  {
+    title: "Open Work Visa Employment Conditions Changing from 20 April 2026",
+    date: "24 February 2026",
+    category: "Work Visas",
+    summary:
+      "From 20 April 2026, INZ is introducing two clearer employment conditions for open work visa holders to better define what work is permitted, helping migrants understand their rights and responsibilities.",
+    keyPoints: [
+      "Some open work visa holders will be able to work for any employer, sole trade, or own and operate a business.",
+      "Other open work visa holders must work for an employer under an employment agreement or contract for services.",
+      "Working holiday visa holders cannot operate a business — employment only.",
+      "Employer-specific visas like AEWV are not affected by these changes.",
+    ],
+    sourceUrl:
+      "https://www.immigration.govt.nz/about-us/news-centre/upcoming-changes-to-employment-conditions-for-open-work-visa-holders/",
+  },
+  {
+    title: "47 New Occupations Added to National Occupation List & Median Wage Rises to $35/hr",
+    date: "9 March 2026",
+    category: "Work Visas",
+    summary:
+      "Immigration New Zealand has expanded the National Occupation List (NOL) with 47 new occupations at skill levels 1–3, including newly reclassified chef roles. The immigration median wage has also increased to NZD $35.00 per hour.",
+    keyPoints: [
+      "47 additional occupations now recognised under the NOL from 9 March 2026.",
+      "Chef roles reclassified into clearer categories based on skill and seniority.",
+      "Immigration median wage rises to NZD $35.00/hr — affects AEWV family and residence wage thresholds.",
+      "Partner support thresholds also increasing — e.g. skill level 1–3 partner threshold rises to $28.00/hr.",
+      "Some current AEWV workers in skill level 4–5 roles may now qualify for a new AEWV under the updated NOL.",
+    ],
+    sourceUrl:
+      "https://www.immigration.govt.nz/about-us/news-centre/new-occupations-recognised-under-the-national-occupation-list-and-annual-median-wage-increase/",
+  },
+  {
+    title: "Minimum Wage Rising to NZD $23.95/hr from 1 April 2026",
+    date: "February 2026",
+    category: "Policy Changes",
+    summary:
+      "The New Zealand minimum wage will increase to NZD $23.95 per hour from 1 April 2026. All AEWV applications submitted on or after this date must reflect the new wage rate, regardless of when the role was originally advertised.",
+    keyPoints: [
+      "New minimum wage: NZD $23.95/hr from 1 April 2026.",
+      "All offer letters and job advertisements for AEWV roles must align with the updated wage.",
+      "Applications submitted before 1 April using the old rate may be refused.",
+      "Employers hiring close to this date should review and update all documentation in advance.",
+    ],
+    sourceUrl: "https://newlandchase.com/immigration-new-zealand-outlines-major-2026-policy-shifts/",
+  },
+  {
+    title: "Major Skilled Migrant Category Changes Coming August 2026",
+    date: "5 March 2026",
+    category: "Residence",
+    summary:
+      "INZ has announced significant changes to the Skilled Migrant Category (SMC) taking effect in late August 2026, including two new residence pathways, updated points settings, and simplified wage requirements.",
+    keyPoints: [
+      "New Skilled Work Experience Pathway: 5 years experience (including 2 years in NZ) at 1.1x median wage.",
+      "New Trades & Technician Pathway: Level 4+ qualification with 4 years experience (18 months in NZ).",
+      "NZ qualifications now earn 1 more point than equivalent overseas qualifications.",
+      "English language test validity extended to 5 years for eligible applicants.",
+      "Accountants with CPA Australia membership now eligible under SMC from August 2026.",
+      "Migrants only need to maintain the median wage rate from when they started — no higher threshold at residence stage.",
+    ],
+    sourceUrl:
+      "https://www.immigration.govt.nz/about-us/news-centre/further-changes-to-the-skilled-migrant-category-to-come-into-effect-in-august-2026/",
+  },
+  {
+    title: "2026 Samoan Quota and Pacific Access Category Registrations Now Open",
+    date: "April 2026",
+    category: "Residence",
+    summary:
+      "Registrations are now open for the 2026 Samoan Quota and Pacific Access Category (PAC). These annual ballots provide a pathway to New Zealand residence for eligible citizens of Samoa, Tonga, Kiribati, and Tuvalu.",
+    keyPoints: [
+      "Samoan Quota: open to Samoan citizens, 1,100 places available annually.",
+      "Pacific Access Category: covers Tonga, Kiribati, and Tuvalu.",
+      "Applicants must register during the open period to be included in the ballot.",
+      "Contact us to check your eligibility and ensure your registration is complete.",
+    ],
+    sourceUrl: "https://www.immigration.govt.nz/",
+  },
+  {
+    title: "2026 Working Holiday Scheme Opening Dates Confirmed",
+    date: "15 January 2026",
+    category: "Visitor & Holiday",
+    summary:
+      "Immigration New Zealand has confirmed the 2026 opening dates for all capped Working Holiday Schemes. Places are limited and fill quickly — applicants should prepare their documents in advance.",
+    keyPoints: [
+      "Opening dates vary by country — check the INZ website for your specific scheme.",
+      "Applications open on the confirmed date and close once places are filled.",
+      "Working holiday visas allow temporary work to support your stay in New Zealand.",
+      "You cannot operate a business on a working holiday visa.",
+    ],
+    sourceUrl:
+      "https://www.immigration.govt.nz/about-us/news-centre/2026-opening-dates-for-capped-working-holiday-schemes-confirmed/",
+  },
+  {
+    title: "Family of Temporary Visa Holders Moving to Immigration Online from June 2026",
+    date: "April 2026",
+    category: "Policy Changes",
+    summary:
+      "From 1 June 2026, applications for family members of temporary visa holders will move to INZ's enhanced Immigration Online system. Applicants lodging around this date should be aware of the transition.",
+    keyPoints: [
+      "Transition to Immigration Online from 1 June 2026.",
+      "Affects partner and dependent child visa applications linked to temporary visa holders.",
+      "The new system aims to simplify and speed up the application process.",
+      "Contact us if you are planning to apply for a family visa around this date.",
+    ],
+    sourceUrl: "https://www.immigration.govt.nz/",
+  },
+];
