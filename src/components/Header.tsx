@@ -46,15 +46,18 @@ export function Header() {
           />
         </Link>
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
-          {navLinks.map((link) => (
-            <Link
-              key={link.id}
-              to={`/#${link.id}`}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-ink-700 transition hover:bg-ink-100 hover:text-ink-950"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const target = link.href ?? `/#${link.id}`;
+            return (
+              <Link
+                key={link.id}
+                to={target}
+                className="rounded-lg px-3 py-2 text-sm font-medium text-ink-700 transition hover:bg-ink-100 hover:text-ink-950"
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
         <div className="flex items-center gap-2">
           <Link
@@ -89,16 +92,19 @@ export function Header() {
           className="border-t border-ink-200 bg-ink-50 px-4 py-4 md:hidden"
         >
           <nav className="flex flex-col gap-1" aria-label="Mobile primary">
-            {navLinks.map((link) => (
-              <Link
-                key={link.id}
-                to={`/#${link.id}`}
-                className="rounded-lg px-3 py-3 text-base font-medium text-ink-800 hover:bg-ink-100"
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const target = link.href ?? `/#${link.id}`;
+              return (
+                <Link
+                  key={link.id}
+                  to={target}
+                  className="rounded-lg px-3 py-3 text-base font-medium text-ink-800 hover:bg-ink-100"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <Link
               to="/#contact"
               className="mt-2 rounded-full bg-fern-600 px-4 py-3 text-center text-sm font-semibold text-white"

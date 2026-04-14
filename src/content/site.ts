@@ -52,6 +52,7 @@ export const navLinks = [
   { id: "evaluation", label: "Evaluation" },
   { id: "team", label: "Team" },
   { id: "testimonials", label: "Testimonials" },
+  { id: "faq", label: "FAQ", href: "/faq" },
   { id: "contact", label: "Contact" },
 ] as const;
 
@@ -325,6 +326,46 @@ export const testimonialsBlock = {
   subtitle:
     "Feedback from people we have supported through their visa journeys — and live reviews on Google Maps and Facebook.",
 };
+
+export const faqBlock = {
+  eyebrow: "FAQ",
+  title: "Frequently asked questions",
+  subtitle:
+    "Answers to the questions we hear most often from people planning a New Zealand visa or immigration path.",
+};
+
+export const faqs = [
+  {
+    question: "How can Trinity help with my New Zealand visa?",
+    answer:
+      "We provide licensed immigration advice, eligibility assessment, document review, and application support for visitor, student, work, and residence visas. We help you understand your options, prepare the evidence INZ expects, and keep your application on track.",
+  },
+  {
+    question: "Can I apply for a visa if I am outside New Zealand?",
+    answer:
+      "Yes. Most New Zealand visas are available from overseas. We work with clients around the world and can help you manage your application remotely, including preparing supporting documents and communicating with Immigration New Zealand.",
+  },
+  {
+    question: "What is the best first step to start my immigration process?",
+    answer:
+      "The best first step is to describe your situation using our contact form or evaluation form. We will review your goals, current residency status, qualifications, and evidence to identify the strongest pathway for your case.",
+  },
+  {
+    question: "Which visa types does Trinity advise on?",
+    answer:
+      "We advise on visitor visas, student visas, work visas, accredited employer pathways, partner and family visas, and skilled residence applications. We also provide general guidance on New Zealand immigration policy and changing INZ requirements.",
+  },
+  {
+    question: "How long does the application process usually take?",
+    answer:
+      "Processing times differ by visa type and by applicant circumstances. Some visitor or student visas may be decided quickly, while residence pathways can take longer. We can help estimate likely timing once we know your specific case.",
+  },
+  {
+    question: "Are your recommendations based on current INZ rules?",
+    answer:
+      "Yes. Our advice is based on current New Zealand immigration rules and licensed adviser practice. We always recommend checking the latest official INZ instructions before you apply.",
+  },
+] as const;
 
 /** Highlights from public review pages (see links for full threads). */
 export const socialReviewHighlights = [
