@@ -19,9 +19,11 @@ export const siteMeta = {
   facebookReviewsUrl: "https://www.facebook.com/trinityNZimmigration/reviews",
   iaaUrl: "https://www.iaa.govt.nz/",
   nzamiUrl: "https://nzami.co.nz/",
+  liaaUrl: "https://liaassociation.com/",
   assets: {
     iaaLogo: "/assets/img/team/iaa.png",
     nzamiLogo: "/assets/img/team/nzami.png",
+    liaaLogo: "/assets/img/team/liaa.png",
     ctaBackground: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=1500&q=80",
     readyCtaBackground: "https://images.unsplash.com/photo-1695633439545-f61000b336e6?w=1000&auto=format&fit=crop&q=60",
   },
@@ -301,6 +303,9 @@ export const teamBlock = {
   title: "Experienced licensed advisers",
   intro:
     "Our immigration advisers have experience working with immigrants from many backgrounds and countries. We can provide the information you need to immigrate to New Zealand and help ensure the process is as smooth as possible.",
+  affiliationTitle: "Professional associations",
+  affiliationSubtitle:
+    "We are connected to the leading immigration adviser organizations in New Zealand, including IAA, NZAMI, and LIAA.",
 };
 
 export const team = [

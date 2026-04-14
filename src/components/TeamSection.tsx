@@ -5,39 +5,61 @@ export function TeamSection() {
   return (
     <SectionShell id="team" eyebrow={teamBlock.eyebrow} title={teamBlock.title}>
       <p className="max-w-3xl text-lg text-ink-700">{teamBlock.intro}</p>
-      <div className="mt-10 flex flex-wrap items-center justify-center gap-10 border-y border-ink-200 py-8">
-        <a
-          href={siteMeta.iaaUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block shrink-0 transition hover:opacity-90"
-        >
-          <img
-            src={siteMeta.assets.iaaLogo}
-            alt="Immigration Advisers Authority"
-            width={200}
-            height={80}
-            className="h-14 w-auto max-w-[200px] object-contain sm:h-16"
-            loading="lazy"
-            decoding="async"
-          />
-        </a>
-        <a
-          href={siteMeta.nzamiUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block shrink-0 transition hover:opacity-90"
-        >
-          <img
-            src={siteMeta.assets.nzamiLogo}
-            alt="New Zealand Association for Migration and Investment (NZAMI)"
-            width={200}
-            height={80}
-            className="h-14 w-auto max-w-[200px] object-contain sm:h-16"
-            loading="lazy"
-            decoding="async"
-          />
-        </a>
+      <div className="mt-10 space-y-4 border-y border-ink-200 py-8 text-center">
+        <h3 className="text-xl font-semibold text-ink-950">{teamBlock.affiliationTitle}</h3>
+        <p className="mx-auto max-w-2xl text-sm leading-relaxed text-ink-700">
+          {teamBlock.affiliationSubtitle}
+        </p>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-10">
+          <a
+            href={siteMeta.iaaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block shrink-0 transition hover:opacity-90"
+          >
+            <img
+              src={siteMeta.assets.iaaLogo}
+              alt="Immigration Adviser Authority (IAA)"
+              width={180}
+              height={72}
+              className="h-14 w-auto max-w-[180px] object-contain sm:h-16"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <a
+            href={siteMeta.nzamiUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block shrink-0 transition hover:opacity-90"
+          >
+            <img
+              src={siteMeta.assets.nzamiLogo}
+              alt="New Zealand Association for Migration and Investment (NZAMI)"
+              width={180}
+              height={72}
+              className="h-14 w-auto max-w-[180px] object-contain sm:h-16"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <a
+            href={siteMeta.liaaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block shrink-0 transition hover:opacity-90"
+          >
+            <img
+              src={siteMeta.assets.liaaLogo}
+              alt="Licensed Immigration Adviser Association (LIAA)"
+              width={180}
+              height={72}
+              className="h-14 w-auto max-w-[180px] object-contain sm:h-16"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+        </div>
       </div>
       <ul className="mt-12 grid gap-6 lg:grid-cols-2">
         {team.map((m) => (
