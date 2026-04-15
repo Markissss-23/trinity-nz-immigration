@@ -91,7 +91,7 @@ export const whyNz = {
   links: [
     {
       label: "New Zealand History — Culture and Society",
-      href: "http://www.nzhistory.net.nz/culture-and-society",
+      href: "https://nzhistory.govt.nz/culture-and-society",
     },
     { label: "100% Pure New Zealand", href: "http://www.newzealand.com/int/" },
     {
