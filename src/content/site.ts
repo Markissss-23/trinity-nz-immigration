@@ -86,7 +86,7 @@ export const whyNz = {
   title: "A welcoming place to visit, study, work, and live",
   body: [
     "With a patchwork history of Māori, European, Pacific Island and Asian cultures, New Zealand has become a melting-pot population — but one with some uniting features that make it unique in the world. Today, of the 4.4 million New Zealanders (informally known as Kiwis), approximately 69% are of European descent, 14.6% are indigenous Māori, 9.2% Asian and 6.9% non-Māori Pacific Islanders. Geographically, over three-quarters of the population live in the North Island, with one-third of the total population living in Auckland. The other main cities of Wellington, Christchurch and Hamilton are where the majority of the remaining Kiwis dwell.",
-    "There is a reason New Zealand is consistently among the top 10 best countries to live in in the world. It is a safe place to live in, clean and beautiful. The New Zealanders are famous for their natural warmth and hospitality. Kiwis, as what the people of New Zealand are otherwise called, welcome visitors as well as migrants from all over the world. New Zealand is also one of the best places to raise a family. There are also jobs available for people with qualifications and experience.",
+    "There is a reason New Zealand is consistently among the top 10 best countries to live in the world. It is a safe place to live in, clean and beautiful. The New Zealanders are famous for their natural warmth and hospitality. Kiwis, as what the people of New Zealand are otherwise called, welcome visitors as well as migrants from all over the world. New Zealand is also one of the best places to raise a family. There are also jobs available for people with qualifications and experience.",
   ],
   links: [
     {
