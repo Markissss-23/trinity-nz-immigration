@@ -131,10 +131,7 @@ export default function NewsPage() {
                     {featured.keyPoints && featured.keyPoints.length > 0 && (
                       <ul className="mt-4 space-y-2">
                         {featured.keyPoints.map((point, i) => (
-                          <li
-                            key={i}
-                            className="flex items-start gap-2.5 text-sm text-ink-700"
-                          >
+                          <li key={i} className="flex items-start gap-2.5 text-sm text-ink-700">
                             <span className="mt-0.5 flex-shrink-0 text-fern-600">✓</span>
                             {point}
                           </li>
@@ -143,13 +140,19 @@ export default function NewsPage() {
                     )}
 
                     <div className="mt-6 flex flex-wrap items-center gap-5 border-t border-ink-100 pt-5">
+                      <Link
+                        to={`/news/${featured.slug}`}
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-fern-700 transition hover:text-fern-800"
+                      >
+                        Read full article →
+                      </Link>
                       <a
                         href={featured.sourceUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-fern-700 transition hover:text-fern-800"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-400 transition hover:text-ink-600"
                       >
-                        Read on INZ website
+                        {featured.sourceLabel ?? "INZ source"}
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
@@ -167,9 +170,9 @@ export default function NewsPage() {
                 {/* Remaining articles grid */}
                 {rest.length > 0 && (
                   <div className="grid gap-5 sm:grid-cols-2">
-                    {rest.map((article, idx) => (
+                    {rest.map((article) => (
                       <div
-                        key={idx}
+                        key={article.slug}
                         className="flex flex-col rounded-xl border border-ink-200 bg-white p-5 shadow-sm"
                       >
                         <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -192,13 +195,19 @@ export default function NewsPage() {
                         </p>
 
                         <div className="mt-4 flex flex-wrap items-center gap-4 border-t border-ink-100 pt-4">
+                          <Link
+                            to={`/news/${article.slug}`}
+                            className="text-xs font-semibold text-fern-700 transition hover:text-fern-800"
+                          >
+                            Read full article →
+                          </Link>
                           <a
                             href={article.sourceUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-xs font-semibold text-fern-700 transition hover:text-fern-800"
+                            className="inline-flex items-center gap-1 text-xs font-semibold text-ink-400 transition hover:text-ink-600"
                           >
-                            INZ source
+                            {article.sourceLabel ?? "INZ source"}
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
