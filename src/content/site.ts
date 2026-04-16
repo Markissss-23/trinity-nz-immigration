@@ -98,6 +98,10 @@ export const whyNz = {
       label: "New Zealand Now — Why New Zealand?",
       href: "https://www.newzealandnow.govt.nz/resources/why-new-zealand",
     },
+    {
+      label: "Choose New Zealand Education + Migration — Why NZ",
+      href: "https://www.choosenewzealand.com/why-nz/",
+    },
   ],
 };
 
@@ -589,3 +593,19 @@ export const newsData: NewsArticle[] = [
     sourceUrl: "https://www.immigration.govt.nz/",
   },
 ];
+
+export const notFoundBlock = {
+  title: "Page not found",
+  number: "404",
+  body: "Sorry, we couldn't find the page you were looking for. It may have been moved, renamed, or it never existed.",
+  primaryCta: { label: "Back to home", to: "/" },
+  secondaryCta: { label: "Contact us", to: "/#contact" },
+  helpfulLinksTitle: "You might be looking for",
+  helpfulLinks: [
+    { label: "Our services", to: "/#services" },
+    { label: "Online evaluation form", to: "/evaluation" },
+    { label: "News & updates", to: "/news" },
+    { label: "Frequently asked questions", to: "/faq" },
+    { label: "Get in touch", to: "/#contact" },
+  ],
+} as const;

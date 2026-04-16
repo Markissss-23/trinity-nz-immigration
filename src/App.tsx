@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import NewsPage from "./pages/NewsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route path="/news" element={<NewsPage />} />
       <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
