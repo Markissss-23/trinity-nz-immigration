@@ -386,28 +386,28 @@ export const socialReviewHighlights = [
     badge: "Google reviews",
     summary:
       "Selected 5-star reviews from our Google Business Profile — open the Maps listing for full details.",
-    rating: "5.0",
-    reviewCount: 56,
+    rating: "4.9",
+    reviewCount: 55,
     reviews: [
       {
-        text: "Outstanding support from start to finish — Trinity NZ Immigration handled everything with care and answered every question promptly.",
-        author: "Amy T.",
+        text: "To the Trinity New Zealand Immigration Service specially Mam Luz Cu. Mam Luz was always clear and detailed when explaining the steps we need. She also providing timely updates and suggestions/ advice for a better application process. Thanks to Mam Luz’s dedication and attention to detail, I was able to successfully obtain my resident visa from visitor and work visa. Highly recommended!",
+        author: "Janeth C.",
       },
       {
-        text: "Fast, professional and thorough advice. My visa process was much easier with their help.",
-        author: "Daniel P.",
+        text: "I would like to sincerely give a huge thanks to Ms. Luz and Trinity New Zealand Immigration Services Ltd. for their exceptional assistance throughout my visa application process. Despite the tight schedule with my previous visa expiring, my visa was approved in just five working days! Highly recommended!! Wishing all the best with Ms. Luz and team!",
+        author: "liza",
       },
       {
-        text: "Great service, very responsive, and detailed guidance on documents and deadlines.",
-        author: "Maria L.",
+        text: "I am so grateful for the help of Trinity. With just 1 day my visa was approved. Until now I am still in shocked but I think this is also because of the way Trinity handles the documents and process it with a very detailed information. Trinity was so knowledgeable regarding the process and Maam Luz was so eager  and quick to respond whenever I have questions. This is a legit Immigration services and would 100% recommend.",
+        author: "Keigh L.",
       },
       {
-        text: "Highly recommend Trinity NZ Immigration for their friendly team and visa expertise.",
-        author: "Sarah K.",
+        text: "Thank you so much Trinity New Zealand Immigration Services Ltd specially to Ma'am Luz Bayog Cu. With in one week my student visa was approved. Once again, thank you so much ma'am Luz for your help and kindness. I've learned a lot also from you. God bless you always and the rest of the team❤️🙏 …",
+        author: "Carl Jerome L.",
       },
       {
-        text: "Excellent support for my immigration application — they made a stressful process feel manageable.",
-        author: "Jason W.",
+        text: "Trinity new Zealand immigration services LTD has the best service. I highly recommend Mam Luz Cu, She was my immigration advisor for my general visitor visa application, she was easily to approach to ask questions. I am thankful for the help she provided and for her expertise being an advisor. I am amazed her for being attention to detail and attentiveness. My application, supporting documents, and forms were thoroughly reviewed by her. Thanks to her commitment to excellence and her ability to observe even the smallest details. My application was approved because of her. Thank you so much Mam Luz Cu and Trinity new Zealand immigration services LTD.",
+        author: "Sush Mita D.",
       },
     ],
     href: "https://maps.app.goo.gl/RsTbdGaEyWMCYYtp8",
@@ -422,24 +422,24 @@ export const socialReviewHighlights = [
     reviewCount: 15,
     reviews: [
       {
-        text: "Trinity NZ Immigration was incredible — they answered every question clearly and helped us navigate the whole visa process with confidence.",
-        author: "Nina B.",
+        text: "I am extremely grateful to Trinity New Zealand Immigration Services Ltd, particularly to Ma'am Luz Cu, who assisted us with our visa application. My daughter is now a resident of this country, and I am currently waiting for my own resident visa. I am overjoyed that one of our greatest desires—living together as a family—has finally come true.",
+        author: "Marites S.",
       },
       {
-        text: "Very professional and supportive service. I received updates quickly and they helped me prepare all the documents correctly.",
-        author: "Carlos R.",
+        text: "We are just dreaming before of spending time with my husband in this amazing country, and here we are treasuring the days we have together.This won't be a success without the help of Trinity New Zealand Immigration Services Ltd. and Luz Cu who is with us guiding and updating in everything we need to prepare in order to make this possible. Big thanks to your Company! Another Visit Visa approved and we can now experience spring and summer season😃God Bless! Hope you can help more people in achieving their New Zealand dream!😊🤩🤩",
+        author: "Zoe D.",
       },
       {
-        text: "Excellent adviser team. They made a stressful journey feel manageable and were always available for follow-up questions.",
-        author: "Mai L.",
+        text: "Thank you so much ma'am Luz and trinity new zealand immigration services Ltd. I recommend and rate the services 100% nice good and very kind. Again thank you so much maam luz♥️",
+        author: "Aljune B.",
       },
       {
-        text: "Highly recommend Trinity NZ Immigration. They were patient, detail-oriented, and helped me secure my visa faster than I expected.",
-        author: "Jenna W.",
+        text: "Massive thanks to Tonet for always sorting out my NZ visa related matters. At the outset, Tonet has always been highly responsive in addressing my queries and sending through all pertinent information. One of the things that I deeply appreciate is the quality service – from providing instant updates to guiding you on next steps which gives you a level of assurance and confidence. If you are looking for a professional with great service, I would strongly recommend Trinity New Zealand Immigration Services Ltd particularly Tonet Jang and rest assured you won’t be disappointed! All the best to you and the team! Cheers",
+        author: "BárceNa P.",
       },
       {
-        text: "The team was kind, professional, and very knowledgeable. My experience with them was smooth from start to finish.",
-        author: "Aaron S.",
+        text: "TRINITY NEW ZEALAND Licensed Immigration Advisor TONET JANG processed the following: a. Visitor Visa for  me and my husband to N.Z. a year ago b.  Student Visa for my son who finished his I.T. course a year ago c.  Student Visa for our relative who transferred from Singapore to N.Z.and again the visa for her husband and 3 children to finally join her now in N.Z.",
+        author: "Thelma C.",
       },
     ],
     href: "https://www.facebook.com/trinityNZimmigration/reviews",
