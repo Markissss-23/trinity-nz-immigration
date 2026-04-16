@@ -1,5 +1,7 @@
 # Trinity New Zealand Immigration Services
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1787cdae-0182-4375-bf85-5c0f7da6994d/deploy-status)](https://app.netlify.com/projects/trinity-nz-immigration/deploys)
+
 **Repository:** [github.com/Markissss-23/trinity-nz-immigration](https://github.com/Markissss-23/trinity-nz-immigration)
 
 Single-page React application (Vite + TypeScript + Tailwind CSS) for **Trinity New Zealand Immigration Services Ltd.**, ready to deploy on [Netlify](https://www.netlify.com/).
