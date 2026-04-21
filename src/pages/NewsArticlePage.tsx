@@ -1,8 +1,8 @@
-import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { newsData, siteMeta } from "../content/site";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import { Helmet } from "react-helmet-async";  
 
 const CATEGORY_COLORS: Record<string, string> = {
   "Work Visas": "bg-blue-100 text-blue-700",
@@ -14,16 +14,6 @@ const CATEGORY_COLORS: Record<string, string> = {
 export default function NewsArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const article = newsData.find((a) => a.slug === slug);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = article
-      ? `${article.title} — ${siteMeta.shortName}`
-      : `Article Not Found — ${siteMeta.shortName}`;
-    return () => {
-      document.title = siteMeta.name;
-    };
-  }, [article]);
 
   // 404 state — article slug not found
   if (!article) {
@@ -59,6 +49,16 @@ export default function NewsArticlePage() {
 
   return (
     <div className="min-h-screen bg-ink-50">
+        <Helmet>
+          <title>{article.title} — {siteMeta.shortName}</title>
+          <meta property="og:title" content={article.title} />
+          <meta property="og:description" content={article.summary} />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content={`https://trinitynzimmigration.co.nz/news/${article.slug}`} />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content={article.title} />
+          <meta name="twitter:description" content={article.summary} />
+        </Helmet>
       <Header />
       <main id="main-content" className="scroll-mt-24">
         <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
