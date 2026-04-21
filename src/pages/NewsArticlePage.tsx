@@ -1,8 +1,9 @@
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { newsData, siteMeta } from "../content/site";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { Helmet } from "react-helmet-async";  
+import { ShareBar } from "../components/ShareBar";
 
 const CATEGORY_COLORS: Record<string, string> = {
   "Work Visas": "bg-blue-100 text-blue-700",
@@ -129,6 +130,11 @@ export default function NewsArticlePage() {
               ))}
             </div>
           )}
+
+          <ShareBar
+            title={article.title}
+            url={`https://trinitynzimmigration.co.nz/news/${article.slug}`}
+          />
 
           {/* Source link */}
           <div className="mt-10 border-t border-ink-200 pt-8">
