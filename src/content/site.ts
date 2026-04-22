@@ -87,7 +87,7 @@ export const whyNz = {
   body: [
     "With a rich tapestry woven from Māori, European, Pacific Island, and Asian cultures, Aotearoa New Zealand has evolved into one of the world's most diverse nations—united by a shared spirit that makes it truly unique.",
     "Today, New Zealand's estimated resident population has grown to 5.34 million (informally known as Kiwis). The ethnic makeup reflects this vibrant diversity: approximately 67.8% identify as European, 17.8% as indigenous Māori, 17.3% as Asian, 8.9% as Pacific peoples, and 1.9% as Middle Eastern, Latin American, and African (MELAA).", 
-    "Geographically, over three-quarters of the population (76.3%) now live in the North Island, with the urban hub of Auckland remaining home to one-third (33.2%) of all New Zealanders. The other main centres—Christchurch, Wellington, and Hamilton—continue to be where the majority of the remaining Kiwis dwell.",
+    "Geographically, over three-quarters of the population (76.3%) now live in the North Island, with the urban hub of Auckland remaining home to one-third (33.2%) of all New Zealanders. The other main centres (Christchurch, Wellington, and Hamilton) continue to be where the majority of the remaining Kiwis dwell.",
     "There is a reason New Zealand is consistently among the top 10 best countries to live in the world. It is a safe place to live in, clean and beautiful. The New Zealanders are famous for their natural warmth and hospitality. Kiwis, as what the people of New Zealand are otherwise called, welcome visitors as well as migrants from all over the world. New Zealand is also one of the best places to raise a family. There are also jobs available for people with qualifications and experience.",
   ],
   links: [
@@ -517,7 +517,6 @@ export interface NewsArticle {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Replace your existing newsData in site.ts with this.
 // Sorted by date descending (newest first). First item = "Latest" on NewsPage.
 // ─────────────────────────────────────────────────────────────────────────────
 
